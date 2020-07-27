@@ -1,0 +1,18 @@
+<resources>
+
+    <string-array name="city">
+        <item>[CITY]</item>
+        <item> BANGALORE </item>
+        <item> CHENNAI </item>
+        <item> COIMBATORE </item>
+        <item> KOCHI </item>
+        <item> MUMBAI </item>
+        <item> MYSORE </item>
+        <item> PALAKKAD </item>
+        <item> PUNE </item>
+
+
+    </string-array>
+
+
+</resources>

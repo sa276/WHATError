@@ -1,0 +1,38 @@
+<resources>
+
+    <string-array name="area">
+        <item>[AREA]</item>
+        <item> ADYAR </item>
+        <item> AGALI </item>
+        <item> ALATHUR </item>
+        <item> ANDHERI </item>
+        <item> AUNDH </item>
+        <item> BALEWADI </item>
+        <item> BANDRA </item>
+        <item> BANER </item>
+        <item> EDAPALLY </item>
+        <item> GANDHIPURAM </item>
+        <item> GOKULAM </item>
+        <item> GUINDY </item>
+        <item> JP NAGAR </item>
+        <item> JUHU </item>
+        <item> KAIRADY </item>
+        <item> KALOOR </item>
+        <item> KORAMANGALA </item>
+        <item> KOVAI PUDHUR</item>
+        <item> MARTHAHALLI </item>
+        <item> PACHALAM </item>
+        <item> PALARIVATTOM </item>
+        <item> RAMAKRISHNA NAGAR </item>
+        <item> RS PURAM </item>
+        <item> SANTA CRUZ </item>
+        <item> SIVAJI NAGAR </item>
+        <item> TAMBARAM </item>
+        <item> VELACHERY </item>
+        <item> WHITEFIELD </item>
+
+
+    </string-array>
+
+
+</resources>

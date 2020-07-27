@@ -1,0 +1,13 @@
+<resources>
+
+    <string-array name="state">
+        <item>[STATE]</item>
+        <item> KARNATAKA </item>
+        <item> KERALA </item>
+        <item> MAHARASHTRA </item>
+        <item> TAMILNADU </item>
+
+    </string-array>
+
+
+</resources>

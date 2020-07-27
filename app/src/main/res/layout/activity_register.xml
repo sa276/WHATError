@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/register"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo_register"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_reg"
+        app:lottie_loop="true"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="reg_user.json"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAMILY NAME   "
+        android:layout_below="@+id/user_reg"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/fn_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/user_reg"
+        android:layout_toRightOf="@+id/fn_text"
+        android:id="@+id/fn"
+        android:inputType="text"
+        android:hint="Family Name"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAMILY HEAD   "
+        android:layout_below="@+id/fn_text"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/head_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+
+
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fn"
+        android:id="@+id/head"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:inputType="text"
+        android:layout_toRightOf="@+id/head_text"
+        android:hint="Head"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AGE                     "
+        android:layout_below="@+id/head_text"
+        android:textSize="20sp"
+
+        android:fontFamily="sans-serif"
+        android:id="@+id/age_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:id="@+id/age"
+        android:maxLength="2"
+        android:layout_toRightOf="@id/age_text"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:inputType="number"
+        android:hint="Age"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADDRESS LINE 1"
+        android:layout_below="@+id/age"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/address_text1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age"
+        android:layout_toRightOf="@+id/address_text1"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:inputType="text"
+        android:id="@+id/addr1"
+        android:hint="Line 1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADDRESS LINE 2"
+        android:layout_below="@+id/address_text1"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/address_text2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address_text1"
+        android:layout_toRightOf="@+id/address_text2"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:inputType="text"
+        android:id="@+id/addr2"
+        android:hint="Line 2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STATE                       "
+        android:layout_below="@+id/address_text2"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/state_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+
+
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/state_text"
+        android:layout_below="@+id/address_text2"
+        android:id="@+id/state_spinner">
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CITY                              "
+        android:layout_below="@+id/state_text"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/city_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+
+
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/city_text"
+        android:layout_below="@+id/state_text"
+        android:id="@+id/city_spinner">
+
+    </Spinner>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AREA                         "
+        android:layout_below="@+id/city_text"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/area_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+
+
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/area_text"
+        android:layout_below="@+id/city_text"
+        android:id="@+id/area_spinner">
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PINCODE              "
+        android:layout_below="@+id/area_text"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/pincode_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/area_text"
+        android:layout_toRightOf="@+id/pincode_text"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:inputType="number"
+        android:id="@+id/pincode"
+        android:maxLength="6"
+        android:hint="PINCODE"/>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTACT            "
+        android:layout_below="@+id/pincode_text"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/contact_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pincode_text"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/contact_text"
+        android:id="@+id/contact"
+        android:inputType="number"
+        android:hint="Contact"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consumption(P.w)"
+        android:layout_below="@+id/contact_text"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/consumption_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+
+
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact"
+        android:layout_toRightOf="@+id/consumption_text"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/consum"
+        android:inputType="number"
+        android:hint="Consumption"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TYPE       "
+        android:layout_below="@+id/consum"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/type_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+
+
+        />
+
+
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMMERCIAL"
+        android:layout_marginLeft="45dp"
+        android:id="@+id/r1"
+        android:layout_below="@id/type_text"
+        />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DOMESTIC"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/r2"
+        android:layout_toRightOf="@+id/r1"
+        android:layout_below="@id/type_text"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username          "
+        android:layout_below="@+id/r1"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/username_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r2"
+        android:id="@+id/un"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:text="USR."
+        android:inputType="text"
+        android:layout_toRightOf="@id/username_text"
+        android:hint="Username"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password          "
+        android:layout_below="@+id/username_text"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/password_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/un"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/password_text"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conf Password"
+        android:layout_below="@+id/password_text"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/confpassword_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_text"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/confpassword_text"
+        android:id="@+id/confpassword"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/round"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:onClick="register"
+        android:id="@+id/regbtn"
+        android:layout_marginBottom="25dp"
+        android:layout_below="@id/confpassword_text"
+        />
+
+</RelativeLayout>
+</ScrollView>

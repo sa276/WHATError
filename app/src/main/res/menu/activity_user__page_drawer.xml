@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_details"
+            android:icon="@drawable/details"
+            android:title="My Details" />
+        <item
+            android:id="@+id/nav_alldetails"
+            android:icon="@drawable/eye"
+            android:title="All Details" />
+        <item
+            android:id="@+id/nav_update"
+            android:icon="@drawable/update"
+            android:title="Update" />
+
+        <item
+            android:id="@+id/nav_request"
+            android:icon="@drawable/request_status"
+            android:title="Requests" />
+
+    </group>
+
+    <item android:title="Extras">
+        <menu>
+
+            <item
+                android:id="@+id/nav_recycle"
+                android:icon="@drawable/recycle"
+                android:title="Recycle" />
+        </menu>
+    </item>
+
+</menu>

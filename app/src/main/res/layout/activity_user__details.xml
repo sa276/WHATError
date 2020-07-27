@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_Details">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardPreventCornerOverlap="false"
+            app:cardCornerRadius="25dp"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="35dp"
+                    app:lottie_loop="true"
+                    android:id="@+id/selection"
+                    app:lottie_autoPlay="true"
+                    android:layout_centerHorizontal="true"
+                    app:lottie_fileName="cards.json"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name_input"
+                    android:text=""
+                    android:textSize="35sp"
+                    android:fontFamily="casual"
+                    android:layout_below="@+id/selection"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#2b094f"
+                    android:layout_margin="25dp"
+                    android:layout_below="@+id/name_input"
+                    android:id="@+id/line"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username            :"
+                    android:layout_below="@+id/line"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/username_text"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_below="@+id/line"
+                    android:layout_toRightOf="@+id/username_text"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/username_input"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact                :"
+                    android:layout_below="@+id/username_text"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/contact_text"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_below="@+id/username_text"
+                    android:layout_toRightOf="@+id/contact_text"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/contact_input"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="State                     :"
+                    android:layout_below="@+id/contact_text"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/state_text"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_below="@+id/contact_text"
+                    android:layout_toRightOf="@+id/state_text"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/state_input"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City                        :"
+                    android:layout_below="@+id/state_text"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/city_text"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_below="@+id/state_text"
+                    android:layout_toRightOf="@+id/city_text"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/city_input"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Area                       :"
+                    android:layout_below="@+id/city_text"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/area_text"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_below="@+id/city_text"
+                    android:layout_toRightOf="@+id/area_text"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/area_input"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bill Number          :"
+                    android:layout_below="@+id/area_text"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/billno_text"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_below="@+id/area_text"
+                    android:layout_toRightOf="@+id/billno_text"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/billno_input"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Water Available   :"
+                    android:layout_below="@+id/billno_text"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/wateravl_text"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_below="@+id/billno_text"
+                    android:layout_toRightOf="@+id/wateravl_text"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/wateravl_input"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</ScrollView>

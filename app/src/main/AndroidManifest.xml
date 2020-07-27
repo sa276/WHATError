@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.android.what_error">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:node="replace">
+        <activity android:name=".recycle"
+            android:parentActivityName=".User_Page"/>
+        <activity android:name=".requests_list"
+            android:parentActivityName=".User_Page"/>
+        <activity android:name=".Alldetails"
+            android:parentActivityName=".User_Page"/>
+        <activity android:name=".request"
+            android:parentActivityName=".User_Page"/>
+        <activity android:name=".User_Update"
+            android:parentActivityName=".User_Page"/>
+        <activity android:name=".User_Details"
+            android:parentActivityName=".User_Page"/>
+        <activity
+            android:name=".User_Page"
+            android:label="@string/title_activity_user__page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".selection" />
+        <activity android:name=".Register"
+            android:parentActivityName=".User_Page"/>
+        <activity android:name=".Manager" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
